@@ -25,6 +25,8 @@ srun -c2 fastq_quality_filter -q 20 -p 50 -i Ref_RiboSeq_GSM546920.adapterfree.f
 
 mkdir align
 mkdir align/contaminant/
+
+
 filter_params="--seedSearchLmax 10 --outFilterMultimapScoreRange 0 --outFilterMultimapNmax 255 --outFilterMismatchNmax 1 --outFilterIntronMotifs RemoveNoncanonical"
 STAR --runThreadN 15 --genomeDir StarIndex/contaminant/ --readFilesIn Ref_RiboSeq_GSM546920.HQ.fq --outFileNamePrefix align/contaminant/Ref_RiboSeq_GSM546920.HQ_ --outStd SAM --outReadsUnmapped Fastx --outSAMmode NoQS ${filter_params}
 

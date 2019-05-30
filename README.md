@@ -1,5 +1,5 @@
 # DeepShape
-# For the estimation of Isoform-Level Ribosome Abundance and Distribution Accurately which needs Ribo-seq data only.
+For the estimation of Isoform-Level Ribosome Abundance and Distribution Accurately which needs Ribo-seq data only.
 
 # Preprocess of reference
 
